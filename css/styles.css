@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,500&family=Fugaz+One&family=News+Cycle&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Quicksand:wght@600&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,500&family=Fugaz+One&family=Itim&family=News+Cycle&family=Raleway:wght@500&family=Solitreo&display=swap');
 /* Valores por defecto */
 *{
     margin: 0;
@@ -13,7 +14,7 @@
 /* Body */
 
 body{
-    background: linear-gradient(0deg, rgba(168,121,171,1) 14%, rgba(228,198,235,1) 90%, rgba(255,255,255,1) 99%);  
+    background:linear-gradient(0deg, rgba(168,121,171,1) 14%, rgba(228,198,235,1) 90%, rgba(255,255,255,1) 99%);
     width: 100%;
     height: 100%;
 }
@@ -87,6 +88,7 @@ body{
 p{
     color: white;
     align-items: center;
+    font-family: 'Itim', cursive;
     font-size: 50px;
     text-align: center;
     text-transform: uppercase;
@@ -108,7 +110,7 @@ p{
 }
 
 .item{
-    width: 65%;
+    width: 60%;
     height: 100%;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
@@ -145,30 +147,96 @@ p{
 
 
 .item-marisa{
-    height: 280px;
-    width: 80%;
+    height: 50%;
+    width: 70%;
     border-radius: 50%;
     background-image: url(../img/nosotras/marisa-perfil.jpg);
     background-size: cover ;
     margin: 20px auto 20px auto;
+    background-position: center;
 }
 
 .item-nicole{
-    height: 280px;
-    width: 80%;
+    height: 50%;
+    width: 70%;
     border-radius: 50%;
     background-image: url(../img/nosotras/nicole-perfil.jpg);
     background-size: cover ;
     margin: 20px auto 20px auto;
+    background-position: center;
 }
 
 .item-marina{
-    height: 280px;
-    width: 80%;
+    height: 50%;
+    width: 70%;
     border-radius: 50%;
     background-image: url(../img/nosotras/marina-perfil.jpg);
     background-size: cover ;
     margin: 20px auto 20px auto;
+    background-position: center;
+}
+.direccion{
+    color: white;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 30px auto;
+}
+
+.ubicacion{
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Testimonios */
+
+.container-test{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.test{
+    width:40%;
+    height: 100%;
+    background-image: cover;
+    background-image: url(../img/antes-despues.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-test{
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+
+.txt-test{
+    color: black;
+    font-size: 20px;
+    margin: 10% auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: 100%;
+    width: 80%;
 }
 
 
@@ -181,6 +249,92 @@ p{
 
 
 
+/* Cosmetología */
+
+.title_cosme{
+    margin-top: 100px;
+    font-family: 'Itim', cursive;
+}
+.info_cosme{
+    font-size: 30px;
+    padding: 50px;
+    font-family: 'Itim', cursive;
+}
+
+
+
+
+
+
+.contenedor_tratamientos{
+    height: 1500px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    padding: 20px;
+    gap: 100px;
+    margin: 60px auto 60px auto;
+}
+.grid_trat{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),0 0  0 2px rgb(255,255,255),0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+
+}
+
+.img_trat{
+    background-image: url(../img/lfp.png);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+
+}
+.desc_trat{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 15px;
+    font-family: 'Itim', cursive;
+
+}
+h1{
+    font-family: 'Itim', cursive;
+}
+
+.info_trat{
+    color: black;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+}
+
+.grid_trat:hover{
+    transform: scale(1.05);
+    border-radius: 30px;
+}
+
+.trat2{
+    background-image: url(../img/lfp_con_Ext.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.trat3{
+    background-image: url(../img/dermapen.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
 
 
 
@@ -190,20 +344,36 @@ p{
 
 
 
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 80px;
+    position:absolute;
+    border: solid 1px rgb(255, 255, 255);
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
+    background-color: #92688e;
+
+}
+.footer-text{
+    font-size: 20px;
+    font-family: 'Solitreo', cursive;
+}
 
 
 
 
-
-
-
-/* MEDIAS QUERY´S */
+/* MEDIAS QUERY´S */ /* MEDIAS QUERY´S */ /* MEDIAS QUERY´S */
 
 @media screen and (min-width:320px) and (max-width:479px){
 
     body{
         background: linear-gradient(0deg, rgba(168,121,171,1) 14%, rgba(228,198,235,1) 90%, rgba(255,255,255,1) 99%);  
     }
+
 
     .nav{
         flex-direction: column;
@@ -235,16 +405,19 @@ p{
     
     }
 
+
+
+
     .logo-img{
         height: 200px;
         width: 300px;
     }
-     p{
+    p{
         font-size: 30px;
-     }
+    }
 
-     .tarjetas-container {
-       grid-template-columns: 1fr;
+    .tarjetas-container {
+        grid-template-columns: 1fr;
         padding: 0;
         gap: 50px
     }
@@ -281,9 +454,147 @@ p{
 
 
 
+    .title-map{
+        margin-top: 1100px;
+    }
+    .mapa{
+        margin: 150px auto 30px auto;
+    }
+    
+    .ubicacion{
+        border-radius: 10px;
+    }
 
 
+
+    /* Testimonios */
+
+    .container-test{
+        flex-direction: column;
+    }
+
+    .test{
+        width: 100%;
+    }
 
     
 
+    .grid_trat{
+        flex-direction: column;
+    }
+
+    .img_trat{
+        width: 100%;
+    }
+
+    .desc_trat{
+        height: 60%;
+    }
+
+    .info_trat{
+        font-size: 13px;
+    }
+
+
+
+
+
+    .footer-text{
+        font-size: 15px;
+
+    }  
+
 }
+
+
+
+@media screen and (min-width:480px) and (max-width:1023px){
+    .logo-img{
+        height: 300px;
+        width: 450px;
+    }
+    p{
+        font-size: 30px;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 50px
+    }
+
+    .item{
+        width: 60%;
+        height: 100%;
+    }
+
+    .item-marisa{
+        height: 360px;
+        width: 60%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/marisa-perfil.jpg);
+        background-size: cover ;
+    }
+
+    .item-nicole{
+        height: 360px;
+        width: 60%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/nicole-perfil.jpg);
+        background-size: cover ;
+    }
+
+    .item-marina{
+        height: 360px;
+        width: 60%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/marina-perfil.jpg);
+        background-size: cover;
+    }
+
+
+    
+    .title-map{
+        margin-top: 1500px;
+    }
+    .mapa{
+        margin: 150px auto 30px auto;
+    }
+    
+    .ubicacion{
+        border-radius: 10px;
+    }
+
+
+    /* Testimonios */
+
+    .container-test{
+        flex-direction: column;
+    }
+
+    .test{
+        width: 100%;
+    }
+
+    .grid_trat{
+        flex-direction: column;
+    }
+
+    .img_trat{
+        width: 100%;
+    }
+
+    .desc_trat{
+        height: 60%;
+    }
+
+    .info_trat{
+        font-size: 13px;
+    }
+
+
+
+
+}
+
+/* (INICIO - MAPA) */

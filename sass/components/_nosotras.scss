@@ -1,0 +1,74 @@
+.tarjetas-container{
+    height: 550px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .item{
+        width: 60%;
+        height: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        margin: auto;
+        gap: 10px;
+        background-color: white;
+        box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),0 0  0 2px rgb(255,255,255),0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+    
+    .item:hover{
+        transform: scale(1.1);
+    }
+}
+
+.tarjetas-p{
+    color:black;
+    font-size: 15px;
+    font-family: Poppins;
+    text-transform: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.item-title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family:'Quicksand', sans-serif;
+}
+
+
+.item-marisa{
+    height: 50%;
+    width: 70%;
+    border-radius: 50%;
+    background-image: url(../../img/nosotras/marisa-perfil.jpg);
+    background-size: cover ;
+    margin: 20px auto 20px auto;
+    background-position: center;
+}
+
+.item-nicole{
+    height: 50%;
+    width: 70%;
+    border-radius: 50%;
+    background-image: url(../../img/nosotras/nicole-perfil.jpg);
+    background-size: cover ;
+    margin: 20px auto 20px auto;
+    background-position: center;
+}
+
+.item-marina{
+    height: 50%;
+    width: 70%;
+    border-radius: 50%;
+    background-image: url(../../img/nosotras/marina-perfil.jpg);
+    background-size: cover ;
+    margin: 20px auto 20px auto;
+    background-position: center;
+}

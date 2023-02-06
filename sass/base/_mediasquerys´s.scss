@@ -1,0 +1,228 @@
+@media screen and (min-width:320px) and (max-width:479px){
+
+    body{
+        background: linear-gradient(0deg, rgba(168,121,171,1) 14%, rgba(228,198,235,1) 90%, rgba(255,255,255,1) 99%);  
+    }
+
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        background: #fff;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius:  25px;
+    }
+    .nav .link a ion-icon{
+        font-size: 1.5em;
+        color: rgb(12, 12, 12);
+    }
+    .nav .link:hover{
+        transform: translateY(0px);
+    }
+    .nav .link{
+        transform: translateY(-10px);
+        transition: 0.3s;
+    }
+    .nav .link a span{
+        font-size: 0.9em;
+        padding: 10px;
+        margin: 40px;
+        border-radius: 20px;
+        color: #e9cce6;
+        background-color: #ffff;
+    
+    }
+
+
+
+
+    .logo-img{
+        height: 200px;
+        width: 300px;
+    }
+    p{
+        font-size: 30px;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 50px
+    }
+
+    .item{
+        width: 80%;
+        height: 100%;
+    }
+
+    .item-marisa{
+        height: 220px;
+        width: 80%;
+        border-radius: 100%;
+        background-image: url(../img/nosotras/marisa-perfil.jpg);
+        background-size: cover ;
+    }
+
+    .item-nicole{
+        height: 220px;
+        width: 80%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/nicole-perfil.jpg);
+        background-size: cover ;
+    }
+
+    .item-marina{
+        height: 220px;
+        width: 80%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/marina-perfil.jpg);
+        background-size: cover;
+    }
+
+
+
+
+    .title-map{
+        margin-top: 1100px;
+    }
+    .mapa{
+        margin: 150px auto 30px auto;
+    }
+    
+    .ubicacion{
+        border-radius: 10px;
+    }
+
+
+
+    /* Testimonios */
+
+    .container-test{
+        flex-direction: column;
+    }
+
+    .test{
+        width: 100%;
+    }
+
+    
+
+    .grid_trat{
+        flex-direction: column;
+    }
+
+    .img_trat{
+        width: 100%;
+    }
+
+    .desc_trat{
+        height: 60%;
+    }
+
+    .info_trat{
+        font-size: 13px;
+    }
+
+
+
+
+
+    .footer-text{
+        font-size: 15px;
+
+    }  
+
+}
+
+
+
+@media screen and (min-width:480px) and (max-width:1023px){
+    .logo-img{
+        height: 300px;
+        width: 450px;
+    }
+    p{
+        font-size: 30px;
+    }
+
+    .tarjetas-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 50px
+    }
+
+    .item{
+        width: 60%;
+        height: 100%;
+    }
+
+    .item-marisa{
+        height: 360px;
+        width: 60%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/marisa-perfil.jpg);
+        background-size: cover ;
+    }
+
+    .item-nicole{
+        height: 360px;
+        width: 60%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/nicole-perfil.jpg);
+        background-size: cover ;
+    }
+
+    .item-marina{
+        height: 360px;
+        width: 60%;
+        border-radius: 50%;
+        background-image: url(../img/nosotras/marina-perfil.jpg);
+        background-size: cover;
+    }
+
+
+    
+    .title-map{
+        margin-top: 1500px;
+    }
+    .mapa{
+        margin: 150px auto 30px auto;
+    }
+    
+    .ubicacion{
+        border-radius: 10px;
+    }
+
+
+    /* Testimonios */
+
+    .container-test{
+        flex-direction: column;
+    }
+
+    .test{
+        width: 100%;
+    }
+
+    .grid_trat{
+        flex-direction: column;
+    }
+
+    .img_trat{
+        width: 100%;
+    }
+
+    .desc_trat{
+        height: 60%;
+    }
+
+    .info_trat{
+        font-size: 13px;
+    }
+
+
+
+
+}

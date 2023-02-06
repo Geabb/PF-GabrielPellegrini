@@ -1,0 +1,38 @@
+/* Testimonios */
+
+.container-test{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.test{
+    width:40%;
+    height: 100%;
+    background-image: cover;
+    background-image: url(../../img/antes-despues.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-test{
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+
+.txt-test{
+    color: black;
+    font-size: 20px;
+    margin: 10% auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: 100%;
+    width: 80%;
+}

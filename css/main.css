@@ -1,0 +1,481 @@
+@charset "UTF-8";
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,500&family=Fugaz+One&family=News+Cycle&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Quicksand:wght@600&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,500&family=Fugaz+One&family=Itim&family=News+Cycle&family=Raleway:wght@500&family=Solitreo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: linear-gradient(0deg, rgb(168, 121, 171) 14%, rgb(228, 198, 235) 90%, rgb(255, 255, 255) 99%);
+  width: 100%;
+  height: 100%;
+}
+
+/* Titulo (NOSOTRAS) */
+p {
+  color: white;
+  align-items: center;
+  font-family: "Itim", cursive;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 60px auto 60px auto;
+}
+
+h1 {
+  font-family: "Itim", cursive;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  border: solid 1px rgb(255, 255, 255);
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background-color: #92688e;
+}
+footer .footer-text {
+  font-size: 20px;
+}
+
+/* Menú Navecagición (.nav) */
+/* Enlaces */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  overflow: hidden;
+}
+.nav .link {
+  transform: translateY(-40px);
+  transition: 0.3s;
+}
+.nav .link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  text-decoration: none;
+  color: #ebc0e6;
+}
+.nav .link a span {
+  font-size: 0.9em;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #e9cce6;
+  text-transform: uppercase;
+}
+.nav .link a ion-icon {
+  font-size: 1.5em;
+}
+
+/* Link hover */
+.nav .link:hover {
+  transform: translateY(13px);
+}
+
+/* Estetica Grecia */
+.logo-img {
+  height: 400px;
+  width: 600px;
+  margin: 150px auto 150px auto;
+  background-image: url(../img/eg-ps-bl.png);
+  background-size: cover;
+}
+
+/* Barra */
+.barrita {
+  border-top: 2px solid white;
+  width: 150px;
+  margin: 25px auto auto auto;
+}
+
+.tarjetas-container {
+  height: 550px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.tarjetas-container .item {
+  width: 60%;
+  height: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: auto;
+  gap: 10px;
+  background-color: white;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.tarjetas-container .item:hover {
+  transform: scale(1.1);
+}
+
+.tarjetas-p {
+  color: black;
+  font-size: 15px;
+  font-family: Poppins;
+  text-transform: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.item-marisa {
+  height: 50%;
+  width: 70%;
+  border-radius: 50%;
+  background-image: url(../img/nosotras/marisa-perfil.jpg);
+  background-size: cover;
+  margin: 20px auto 20px auto;
+  background-position: center;
+}
+
+.item-nicole {
+  height: 50%;
+  width: 70%;
+  border-radius: 50%;
+  background-image: url(../img/nosotras/nicole-perfil.jpg);
+  background-size: cover;
+  margin: 20px auto 20px auto;
+  background-position: center;
+}
+
+.item-marina {
+  height: 50%;
+  width: 70%;
+  border-radius: 50%;
+  background-image: url(../img/nosotras/marina-perfil.jpg);
+  background-size: cover;
+  margin: 20px auto 20px auto;
+  background-position: center;
+}
+
+.direccion {
+  color: white;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 30px auto;
+}
+
+.ubicacion {
+  border-radius: 10px;
+}
+
+/* Testimonios */
+.container-test {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  margin: 50px auto;
+  background-color: white;
+}
+
+.test {
+  width: 40%;
+  height: 100%;
+  background-image: cover;
+  background-image: url(../img/antes-despues.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre-test {
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+
+.txt-test {
+  color: black;
+  font-size: 20px;
+  margin: 10% auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100%;
+  width: 80%;
+}
+
+/* Cosmetología */
+.title_cosme {
+  margin-top: 100px;
+  font-family: "Itim", cursive;
+}
+
+.info_cosme {
+  font-size: 30px;
+  padding: 50px;
+  font-family: "Itim", cursive;
+}
+
+.contenedor_tratamientos {
+  height: 1500px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 20px;
+  gap: 100px;
+  margin: 60px auto 60px auto;
+}
+
+.grid_trat {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.img_trat {
+  background-image: url(../img/lfp.png);
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.desc_trat {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  padding: 15px;
+  font-family: "Itim", cursive;
+}
+.desc_trat h1 {
+  font-family: "Itim", cursive;
+}
+
+.info_trat {
+  color: black;
+  font-size: 20px;
+  font-family: "Itim", cursive;
+}
+
+.grid_trat:hover {
+  transform: scale(1.05);
+  border-radius: 30px;
+}
+
+.trat2 {
+  background-image: url(../img/lfp_con_Ext.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.trat3 {
+  background-image: url(../img/dermapen.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    background: linear-gradient(0deg, rgb(168, 121, 171) 14%, rgb(228, 198, 235) 90%, rgb(255, 255, 255) 99%);
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .nav .link a ion-icon {
+    font-size: 1.5em;
+    color: rgb(12, 12, 12);
+  }
+  .nav .link:hover {
+    transform: translateY(0px);
+  }
+  .nav .link {
+    transform: translateY(-10px);
+    transition: 0.3s;
+  }
+  .nav .link a span {
+    font-size: 0.9em;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 20px;
+    color: #e9cce6;
+    background-color: white;
+  }
+  .logo-img {
+    height: 200px;
+    width: 300px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .tarjetas-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 50px;
+  }
+  .item {
+    width: 80%;
+    height: 100%;
+  }
+  .item-marisa {
+    height: 220px;
+    width: 80%;
+    border-radius: 50%;
+    background-image: url(../img/nosotras/marisa-perfil.jpg);
+    background-size: cover;
+  }
+  .item-nicole {
+    height: 220px;
+    width: 80%;
+    border-radius: 50%;
+    background-image: url(../img/nosotras/nicole-perfil.jpg);
+    background-size: cover;
+  }
+  .item-marina {
+    height: 220px;
+    width: 80%;
+    border-radius: 50%;
+    background-image: url(../img/nosotras/marina-perfil.jpg);
+    background-size: cover;
+  }
+  .title-map {
+    margin-top: 1100px;
+  }
+  .mapa {
+    margin: 150px auto 30px auto;
+  }
+  .ubicacion {
+    border-radius: 10px;
+  }
+  /* Testimonios */
+  .container-test {
+    flex-direction: column;
+  }
+  .test {
+    width: 100%;
+  }
+  .grid_trat {
+    flex-direction: column;
+  }
+  .img_trat {
+    width: 100%;
+  }
+  .desc_trat {
+    height: 60%;
+  }
+  .info_trat {
+    font-size: 13px;
+  }
+  .footer-text {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .logo-img {
+    height: 300px;
+    width: 450px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .tarjetas-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 50px;
+  }
+  .item {
+    width: 60%;
+    height: 100%;
+  }
+  .item-marisa {
+    height: 360px;
+    width: 60%;
+    border-radius: 50%;
+    background-image: url(../img/nosotras/marisa-perfil.jpg);
+    background-size: cover;
+  }
+  .item-nicole {
+    height: 360px;
+    width: 60%;
+    border-radius: 50%;
+    background-image: url(../img/nosotras/nicole-perfil.jpg);
+    background-size: cover;
+  }
+  .item-marina {
+    height: 360px;
+    width: 60%;
+    border-radius: 50%;
+    background-image: url(../img/nosotras/marina-perfil.jpg);
+    background-size: cover;
+  }
+  .title-map {
+    margin-top: 1500px;
+  }
+  .mapa {
+    margin: 150px auto 30px auto;
+  }
+  .ubicacion {
+    border-radius: 10px;
+  }
+  /* Testimonios */
+  .container-test {
+    flex-direction: column;
+  }
+  .test {
+    width: 100%;
+  }
+  .grid_trat {
+    flex-direction: column;
+  }
+  .img_trat {
+    width: 100%;
+  }
+  .desc_trat {
+    height: 60%;
+  }
+  .info_trat {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

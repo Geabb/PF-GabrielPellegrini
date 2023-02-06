@@ -1,0 +1,29 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,500&family=Fugaz+One&family=News+Cycle&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Quicksand:wght@600&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,500&family=Fugaz+One&family=Itim&family=News+Cycle&family=Raleway:wght@500&family=Solitreo&display=swap');
+
+
+
+// base
+@import './base/resets';
+@import './base/base.scss';
+
+// abstracts
+@import './abstracts/variables';
+
+
+// layouts
+
+@import './layout/header';
+
+// components
+@import './components/logo';
+@import './components/nosotras';
+@import './components/direccion';
+
+@import './components/testimonios';
+@import './components/cosmetologia';
+
+@import './base/mediasquerys´s';
